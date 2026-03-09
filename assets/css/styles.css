@@ -1,0 +1,86 @@
+/* Fondo general */
+body{
+background: linear-gradient(135deg,#6366f1,#000000,#cc3521);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header{
+background: linear-gradient(90deg,#1e293b,#0f172a);
+box-shadow:0 5px 20px rgba(0,0,0,.35);
+color:white;
+}
+
+/* Título principal */
+h1{
+font-weight:700;
+color:white;
+letter-spacing:1px;
+}
+
+/* Contenedor principal */
+main{
+flex:1;
+}
+
+/* Cards */
+.canvas-card{
+border:none;
+border-radius:18px;
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(10px);
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+transition:all .35s ease;
+}
+
+/* Hover cards */
+.canvas-card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 20px 45px rgba(0,0,0,.3);
+}
+
+/* Títulos de cada canvas */
+.card-title{
+font-weight:600;
+color:#1e293b;
+margin-bottom:15px;
+}
+
+/* Canvas */
+.canvas-box{
+width:100%;
+max-width:300px;
+height:200px;
+border-radius:12px;
+border:none;
+background:white;
+box-shadow:
+inset 0 0 8px rgba(0,0,0,.08),
+0 5px 15px rgba(0,0,0,.15);
+}
+
+/* Footer */
+.footer-custom{
+background:linear-gradient(90deg,#0f172a,#1e293b);
+box-shadow:0 -5px 20px rgba(0,0,0,.4);
+font-size:14px;
+}
+
+/* Animación entrada */
+.canvas-card{
+animation:fadeUp .7s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(25px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
